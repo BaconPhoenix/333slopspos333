@@ -2,8 +2,6 @@ const discord = require ('discord.js');
 
 var client = new discord.Client();
 
-const token = process.env.token;
-
 client.on ("ready", () => {
     console.log ("Main File Ready!");
 
@@ -200,4 +198,4 @@ setTimeout(() => {
 
 });
 
-client.login (token);
+client.login (process.env.token);
